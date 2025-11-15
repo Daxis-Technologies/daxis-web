@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const PartnersGrid = styled.div<{ $visible: boolean }>`
   margin-top: 2.5rem;
@@ -6,7 +6,7 @@ export const PartnersGrid = styled.div<{ $visible: boolean }>`
   gap: 1.4rem;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  transform: translateY(${({ $visible }) => ($visible ? '0' : '18px')});
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "18px")});
   transition: opacity 0.45s ease-out, transform 0.45s ease-out;
 
   @media (min-width: 720px) {
@@ -56,4 +56,7 @@ export const PartnerRole = styled.span`
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: ${({ theme }) => theme.colors.textMuted};
+`;
+export const PartnerAvatarImg = styled.img`
+  border-radius: 50px;
 `;

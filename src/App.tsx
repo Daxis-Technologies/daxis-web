@@ -1,14 +1,14 @@
-import React from 'react';
-import { Header } from './components/Header/Header';
-import { Hero } from './components/Hero/Hero';
-import { About } from './components/About/About';
-import { Services } from './components/Services/Services';
-import { Partners } from './components/Partners/Partners';
-import { Contact } from './components/Contact/Contact';
-import { Footer } from './components/Footer/Footer';
-import { PageWrapper } from './styles/layout';
+import React from "react";
+import { About } from "./components/About/About";
+import { Contact } from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Hero } from "./components/Hero/Hero";
+import { Partners } from "./components/Partners/Partners";
+import { Services } from "./components/Services/Services";
+import { PageWrapper } from "./styles/layout";
 
-export type ThemeName = 'light' | 'dark';
+export type ThemeName = "light" | "dark";
 
 interface AppProps {
   theme: ThemeName;
