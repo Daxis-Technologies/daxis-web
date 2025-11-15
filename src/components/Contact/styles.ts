@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContactGrid = styled.div<{ $visible: boolean }>`
   margin-top: 2.5rem;
@@ -6,7 +6,7 @@ export const ContactGrid = styled.div<{ $visible: boolean }>`
   gap: 1.5rem;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  transform: translateY(${({ $visible }) => ($visible ? '0' : '18px')});
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "18px")});
   transition: opacity 0.45s ease-out, transform 0.45s ease-out;
 
   @media (min-width: 900px) {
@@ -134,12 +134,18 @@ export const SubmitButton = styled.button`
   background: ${({ theme }) => theme.colors.primary};
   color: #ffffff;
   justify-self: flex-start;
-  transition: transform 0.15s ease-out, box-shadow 0.16s ease-out, opacity 0.16s ease-out;
+  transition: transform 0.15s ease-out, box-shadow 0.16s ease-out,
+    opacity 0.16s ease-out;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.45);
 
   &:hover {
     transform: translateY(-1px);
     box-shadow: 0 20px 60px rgba(15, 23, 42, 0.6);
     opacity: 0.96;
+  }
+  @media (max-width: 900px) {
+    justify-self: center;
+    width: 100%;
+    max-width: 240px;
   }
 `;
