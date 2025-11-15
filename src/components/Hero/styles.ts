@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { Section } from '../../styles/layout';
+import styled, { keyframes } from "styled-components";
+import { Section } from "../../styles/layout";
 
 const fadeUp = keyframes`
   from {
@@ -28,7 +28,7 @@ export const HeroSection = styled(Section)`
 export const HeroContent = styled.div<{ $visible: boolean }>`
   max-width: 640px;
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  transform: translateY(${({ $visible }) => ($visible ? '0' : '20px')});
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "20px")});
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 `;
 
@@ -43,7 +43,7 @@ export const HeroKicker = styled.span`
   margin-bottom: 0.75rem;
 
   &::before {
-    content: '';
+    content: "";
     width: 32px;
     height: 1px;
     background: ${({ theme }) => theme.colors.primary};
@@ -85,7 +85,8 @@ export const PrimaryButton = styled.a`
   justify-content: center;
   gap: 0.4rem;
   cursor: pointer;
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, background 0.15s ease-out;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+    background 0.15s ease-out;
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.5);
 
   &:hover {
@@ -103,7 +104,8 @@ export const SecondaryButton = styled.a`
   font-size: 0.9rem;
   cursor: pointer;
   opacity: 0.9;
-  transition: background 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
+  transition: background 0.15s ease-out, opacity 0.15s ease-out,
+    transform 0.15s ease-out;
 
   &:hover {
     opacity: 1;
@@ -123,7 +125,8 @@ export const HeroVisual = styled.div<{ $visible: boolean }>`
   align-content: flex-start;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  animation: ${({ $visible }) => ($visible ? fadeUp : 'none')} 0.6s ease-out 0.15s forwards;
+  animation: ${({ $visible }) => ($visible ? fadeUp : "none")} 0.6s ease-out
+    0.15s forwards;
 
   @media (max-width: 899px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));

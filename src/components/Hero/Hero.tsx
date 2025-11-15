@@ -1,18 +1,18 @@
-import React from 'react';
-import { useInView } from '../../hooks/useInView';
+import React from "react";
+import { useInView } from "../../hooks/useInView";
 import {
-  HeroSection,
+  HeroActions,
+  HeroBadge,
   HeroContent,
   HeroKicker,
-  HeroTitle,
+  HeroSection,
   HeroSubtitle,
-  HeroActions,
+  HeroTagline,
+  HeroTitle,
+  HeroVisual,
   PrimaryButton,
   SecondaryButton,
-  HeroVisual,
-  HeroBadge,
-  HeroTagline,
-} from './styles';
+} from "./styles";
 
 export const Hero: React.FC = () => {
   const { ref, isVisible } = useInView();
@@ -27,8 +27,9 @@ export const Hero: React.FC = () => {
           resultados concretos.
         </HeroTitle>
         <HeroSubtitle>
-          A D-Axis nasce para conectar estratégia de produto, arquitetura de software e experiência
-          digital em um só fluxo — da primeira linha de código ao deploy em produção.
+          A D-Axis nasce para conectar estratégia de produto, arquitetura de
+          software e experiência digital em um só fluxo — da primeira linha de
+          código ao deploy em produção.
         </HeroSubtitle>
 
         <HeroActions>
@@ -37,7 +38,8 @@ export const Hero: React.FC = () => {
         </HeroActions>
 
         <HeroTagline>
-          › Implementação de software • Landing pages • APIs e serviços web • Apps mobile
+          › Implementação de software • Landing pages • APIs e serviços web •
+          Apps mobile
         </HeroTagline>
       </HeroContent>
 
