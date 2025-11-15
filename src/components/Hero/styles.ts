@@ -21,7 +21,7 @@ export const HeroSection = styled(Section)`
   @media (min-width: 900px) {
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     align-items: center;
-    min-height: calc(100vh - 4rem);
+    min-height: calc(60vh - 4rem);
   }
 `;
 
