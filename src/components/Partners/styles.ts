@@ -33,6 +33,14 @@ export const PartnerCard = styled.article`
     font-size: 0.9rem;
     color: ${({ theme }) => theme.colors.textMuted};
   }
+
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out,
+    border-color 0.18s ease-out;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+    border-color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const PartnerAvatar = styled.div`

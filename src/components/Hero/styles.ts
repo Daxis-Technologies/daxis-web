@@ -144,7 +144,14 @@ export const HeroBadge = styled.div`
     ),
     ${({ theme }) => theme.colors.surface};
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.28);
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out,
+    border-color 0.18s ease-out;
 
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+    border-color: ${({ theme }) => theme.colors.primary};
+  }
   span {
     display: block;
     font-weight: 600;
